@@ -351,6 +351,9 @@ p  { color:var(--ink-700); line-height:1.65; margin:0; }
   font-size:17px; line-height:1.58; color:var(--ink-700);
   max-width:500px; margin-bottom:32px;
 }
+@media(min-width:1101px){
+  .hero-sub { font-size:22px; line-height:1.55; }
+}
 .hero-actions { display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
 .hero-social-proof {
   display:flex; align-items:center; gap:14px; margin-top:32px;
@@ -858,10 +861,11 @@ p  { color:var(--ink-700); line-height:1.65; margin:0; }
     width:100%; height:50%;
     background:linear-gradient(to bottom, transparent 0%, #ffffff 100%);
   }
-  .hero-v2-copy { padding:44px 32px 68px; }
+  .hero-v2-copy { padding:36px 32px 48px; text-align:center; align-items:center; }
+  .hero-v2-copy .hero-sub { margin-left:auto; margin-right:auto; }
 }
 @media(max-width:768px){
-  .hero-v2-copy { padding:32px 16px 52px; }
+  .hero-v2-copy { padding:28px 20px 40px; }
   .hero-v2-photo { height:300px; }
 }
 
