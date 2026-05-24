@@ -22,7 +22,7 @@ function setLang(l) {
   lang = l;
   localStorage.setItem('bsi-lang', l);
   document.querySelectorAll('[data-sw][data-en]').forEach(el => {
-    el.textContent = el.dataset[l];
+    el.innerHTML = el.dataset[l];
   });
   document.querySelectorAll('[data-sw-ph]').forEach(el => {
     el.placeholder = l === 'sw' ? el.dataset.swPh : el.dataset.enPh;

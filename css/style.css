@@ -1081,7 +1081,7 @@ p  { color:var(--ink-700); line-height:1.65; margin:0; }
 @media (max-width:768px){
   .section  { padding:64px 0; }
   .nav-links,.nav-right .lang-toggle{ display:none; }
-  .nav-hamburger  { display:inline-flex; }
+  .nav-hamburger  { display:inline-flex; margin-left:auto; }
   .nav-right .btn-primary { display:none; }
   .how-grid       { grid-template-columns:1fr; }
   .stats-grid     { grid-template-columns:1fr 1fr; }
