@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BSI Finance — Easy Loans. Better Life.</title>
+  <meta name="description" content="BSI Finance Tanzania — microfinance for salaried employees, businesses and churches. Fast approval in 48 hours from our Tegeta branch.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ════════════════ SVG SYMBOL LIBRARY ════════════════ -->
+<svg style="display:none" aria-hidden="true">
+  <symbol id="ic-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="ic-arrow-up-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></symbol>
+  <symbol id="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 7"/></symbol>
+  <symbol id="ic-bolt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></symbol>
+  <symbol id="ic-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 012-2h2a2 2 0 012 2v2M3 13h18"/></symbol>
+  <symbol id="ic-building" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2M10 21v-3h4v3"/></symbol>
+  <symbol id="ic-church" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M10 4h4M5 22V11l7-4 7 4v11M9 22v-6h6v6"/></symbol>
+  <symbol id="ic-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2 1a11 11 0 005 5l1-2 5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></symbol>
+  <symbol id="ic-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 7 9-7"/></symbol>
+  <symbol id="ic-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-7 7-12a7 7 0 10-14 0c0 5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="ic-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="ic-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="ic-chevron-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></symbol>
+  <symbol id="ic-star" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 3l2.6 5.5 6 .9-4.4 4.2 1 6-5.2-2.8-5.2 2.8 1-6L3.4 9.4l6-.9L12 3z"/></symbol>
+  <symbol id="ic-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-4 8-8 9-4-1-8-4-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></symbol>
+  <symbol id="ic-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L2 9l8 3 3 8 9-18z"/></symbol>
+</svg>
+
+<!-- ════════════════ HEADER ════════════════ -->
+<header class="site-header" id="main-header">
+  <div class="nav-inner">
+
+    <!-- Logo -->
+    <a href="index.html" class="nav-logo">
+      <img src="images/bsi-logo.png" alt="BSI Finance" class="nav-logo-img">
+    </a>
+
+    <!-- Desktop nav -->
+    <nav class="nav-links">
+      <a href="index.html" data-sw="Mwanzo" data-en="Home">Home</a>
+      
+      <a href="about.html" data-sw="Kuhusu" data-en="About">About</a>
+      <div class="nav-dropdown"><button class="nav-dropdown-trigger" data-sw="Mikopo" data-en="Loans">Loans <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button><div class="nav-dropdown-menu"><a href="employee-loan.html"><span class="dd-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></span><span data-sw="Mkopo wa Wafanyakazi" data-en="Employee Loan">Employee Loan</span></a><a href="business-loan.html"><span class="dd-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 012-2h2a2 2 0 012 2v2"/></svg></span><span data-sw="Mkopo wa Biashara" data-en="Business Loan">Business Loan</span></a><a href="church-loan.html"><span class="dd-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 2v4M10 4h4M5 22V11l7-4 7 4v11M9 22v-6h6v6"/></svg></span><span data-sw="Mkopo wa Kanisa" data-en="Church Loan">Church Loan</span></a></div></div>
+      <a href="requirements.html" data-sw="Masharti" data-en="Requirements">Requirements</a>
+      <a href="contact.html" data-sw="Wasiliana" data-en="Contact">Contact</a>
+    </nav>
+
+    <div class="nav-right">
+      
+
+      <!-- CTA -->
+      <a href="contact.html" class="btn btn-primary" style="font-size:13px;padding:10px 18px;">
+        <span data-sw="Omba sasa" data-en="Apply now">Apply now</span>
+        <svg width="14" height="14"><use href="#ic-arrow-right"/></svg>
+      </a>
+
+      <div class="lang-toggle">
+        <button class="lang-btn" data-lang-btn="sw">SW</button>
+        <button class="lang-btn active" data-lang-btn="en">EN</button>
+      </div>
+
+      <!-- Hamburger -->
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu">
+        <svg width="22" height="22"><use href="#ic-menu"/></svg>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<!-- Mobile nav -->
+<div class="mob-nav-overlay" id="mob-overlay"></div>
+<nav class="mob-nav" id="mob-nav" aria-hidden="true">
+  <div class="mob-nav-top">
+    <a href="index.html" class="nav-logo"><img src="images/bsi-logo.png" alt="BSI Finance" class="nav-logo-img"></a>
+    <button id="mob-close" style="padding:8px;border-radius:10px;border:1px solid var(--line);" aria-label="Close menu">
+      <svg width="22" height="22"><use href="#ic-x"/></svg>
+    </button>
+  </div>
+  <a href="index.html" data-sw="Mwanzo" data-en="Home">Home</a>
+  <div class="mob-loan-group"><div class="mob-loan-label" data-sw="Mikopo" data-en="Loans">Loans</div><a href="employee-loan.html" class="mob-loan-link" data-sw="Mkopo wa Wafanyakazi" data-en="Employee Loan">Employee Loan</a><a href="business-loan.html" class="mob-loan-link" data-sw="Mkopo wa Biashara" data-en="Business Loan">Business Loan</a><a href="church-loan.html" class="mob-loan-link" data-sw="Mkopo wa Kanisa" data-en="Church Loan">Church Loan</a></div>
+  <a href="about.html" data-sw="Kuhusu" data-en="About">About</a>
+  <a href="requirements.html" data-sw="Masharti" data-en="Requirements">Requirements</a>
+  <a href="contact.html" data-sw="Wasiliana" data-en="Contact">Contact</a>
+  <div class="mob-cta">
+    <div class="lang-toggle" style="margin-bottom:16px;">
+      <button class="lang-btn" data-lang-btn="sw">SW</button>
+      <button class="lang-btn active" data-lang-btn="en">EN</button>
+    </div>
+    <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;padding:14px;">
+      <span data-sw="Omba sasa" data-en="Apply now">Apply now</span>
+      <svg width="14" height="14"><use href="#ic-arrow-right"/></svg>
+    </a>
+  </div>
+</nav>
+
+<!-- ════════════════ HERO ════════════════ -->
+<section class="hero-v2">
+
+  <!-- Left: copy -->
+  <div class="hero-v2-copy">
+
+    <h1 class="hero-h1 display" style="font-size:clamp(34px,4vw,56px);margin-bottom:20px;">
+      <span data-sw="Mtaji unaosonga" data-en="Capital that moves">Capital that moves</span>
+      <em style="display:block;">
+        <span data-sw="kwa kasi yako." data-en="as fast as you do.">as fast as you do.</span>
+        <svg viewBox="0 0 300 12" preserveAspectRatio="none" aria-hidden="true" style="width:100%;max-width:300px;height:10px;display:block;margin-top:6px;">
+          <path class="hero-shimmer-base" d="M2 8 Q 80 2, 150 6 T 298 4" stroke="var(--coral-500)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <path class="hero-shimmer-sweep" d="M2 8 Q 80 2, 150 6 T 298 4" stroke="var(--coral-500)" stroke-width="4" fill="none" stroke-linecap="round" pathLength="300"/>
+        </svg>
+      </em>
+    </h1>
+
+    <p class="hero-sub" style="max-width:420px;margin-bottom:36px;font-size:16px;color:var(--ink-700);line-height:1.7;" data-sw="Mikopo ya mtaji wa kazi, mishahara na huduma za kanisa — fedha zinatolewa ndani ya masaa 48 kutoka tawi letu la Tegeta, Dar es Salaam. Hakuna ada za siri." data-en="Working-capital loans, salary advances and church financing — disbursed within 48 hours from our Tegeta branch in Dar es Salaam. No hidden fees.">Working-capital loans, salary advances and church financing — disbursed within 48 hours from our Tegeta branch in Dar es Salaam. No hidden fees.</p>
+
+    <div class="hero-actions">
+      <a href="contact.html" class="btn btn-primary" style="padding:15px 28px;font-size:15px;">
+        <span data-sw="Omba mkopo" data-en="Apply for a loan">Apply for a loan</span>
+        <svg width="16" height="16"><use href="#ic-arrow-right"/></svg>
+      </a>
+      <a href="requirements.html" class="btn btn-outline" style="padding:15px 28px;font-size:15px;">
+        <span data-sw="Angalia mikopo" data-en="Our services">Our services</span>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Right: full-bleed photo -->
+  <div class="hero-v2-photo">
+    <img src="images/hero-office.png" alt="BSI Finance loan officer with client" loading="eager">
+  </div>
+
+</section>
+
+<!-- ════════════════ OVERVIEW ════════════════ -->
+<section class="sov-section section">
+  <div class="wrap">
+
+    <div class="sov-header reveal">
+      <h2 class="display sov-headline" data-sw="Mkopo wenye dhamiri. Haraka. Bila ada za siri." data-en="Responsible lending. Fast decisions. No hidden fees.">Responsible lending. Fast decisions. No hidden fees.</h2>
+      <p class="sov-sub" data-sw="BSI Finance ni taasisi ya fedha ndogo ndogo iliyoidhinishwa na Benki Kuu ya Tanzania (Tier 2), iliyojitolea kwa utoaji wa mikopo yenye uwajibikaji, ushirikishwaji wa kifedha, na kupunguza umaskini — ikisaidia wafanyakazi, wajasiriamali, na taasisi za kidini kutoka tawi letu la Tegeta, Dar es Salaam, tangu 2018." data-en="BSI Finance is a Bank of Tanzania licensed Tier 2 microfinance institution, committed to responsible lending, financial inclusion, and poverty reduction — serving salaried workers, entrepreneurs, and religious institutions from our Tegeta branch in Dar es Salaam since 2018.">BSI Finance is a Bank of Tanzania licensed Tier 2 microfinance institution, committed to responsible lending, financial inclusion, and poverty reduction — serving salaried workers, entrepreneurs, and religious institutions from our Tegeta branch in Dar es Salaam since 2018.</p>
+    </div>
+
+    <div class="sov-grid">
+
+      <!-- Salaried Employees -->
+      <div class="sov-card reveal d1">
+        <div class="sov-icon" aria-hidden="true">
+          <svg viewBox="0 0 80 80" fill="none" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+            <!-- Person -->
+            <circle cx="40" cy="25" r="12" stroke="#0C2E4A" stroke-width="2"/>
+            <path d="M16 68c0-13.3 10.7-24 24-24s24 10.7 24 24" stroke="#0C2E4A" stroke-width="2"/>
+            <!-- Payslip badge -->
+            <rect x="44" y="45" width="24" height="19" rx="3" stroke="#f43334" stroke-width="1.8" fill="rgba(244,51,52,.07)"/>
+            <line x1="48" y1="51" x2="64" y2="51" stroke="#f43334" stroke-width="1.4"/>
+            <line x1="48" y1="56" x2="60" y2="56" stroke="#f43334" stroke-width="1.4"/>
+            <line x1="48" y1="61" x2="62" y2="61" stroke="#f43334" stroke-width="1.4"/>
+          </svg>
+        </div>
+        <h3 class="sov-title" data-sw="Mikopo ya Wafanyakazi" data-en="Salaried Employee Loans">Salaried Employee Loans</h3>
+        <p class="sov-desc" data-sw="Hadi mara 12 ya mshahara wako, kukokotolewa moja kwa moja kwenye mshahara. Inapatikana kwa watumishi wa serikali, walimu, NGO na makampuni ya kibinafsi yaliyosajiliwa." data-en="Up to 12× your monthly salary with direct payroll repayment. Open to civil servants, teachers, NGO staff, and employees of registered private companies.">Up to 12× your monthly salary with direct payroll repayment. Open to civil servants, teachers, NGO staff, and employees of registered private companies.</p>
+        <a href="employee-loan.html" class="sov-link">
+          <span data-sw="Soma zaidi" data-en="Learn more">Learn more</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+
+      <!-- Business & SME -->
+      <div class="sov-card reveal d2">
+        <div class="sov-icon" aria-hidden="true">
+          <svg viewBox="0 0 80 80" fill="none" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+            <!-- Building -->
+            <rect x="14" y="36" width="52" height="34" rx="3" stroke="#0C2E4A" stroke-width="2"/>
+            <path d="M8 36L40 12l32 24" stroke="#0C2E4A" stroke-width="2"/>
+            <rect x="32" y="50" width="16" height="20" rx="2" stroke="#0C2E4A" stroke-width="1.5"/>
+            <rect x="18" y="44" width="10" height="10" rx="1.5" stroke="#0C2E4A" stroke-width="1.5"/>
+            <rect x="52" y="44" width="10" height="10" rx="1.5" stroke="#0C2E4A" stroke-width="1.5"/>
+            <!-- Growth bars accent -->
+            <rect x="50" y="20" width="5" height="8"  rx="1" fill="#f43334"/>
+            <rect x="57" y="16" width="5" height="12" rx="1" fill="#f43334"/>
+            <rect x="64" y="11" width="5" height="17" rx="1" fill="#f43334"/>
+          </svg>
+        </div>
+        <h3 class="sov-title" data-sw="Mikopo ya Biashara" data-en="Business &amp; SME Loans">Business &amp; SME Loans</h3>
+        <p class="sov-desc" data-sw="Mtaji wa kazi kuanzia TSh milioni 2 hadi 200 kwa bidhaa, vifaa, na upanuzi wa biashara. Dhamana ya hati ya ardhi au gari inakubalika." data-en="Working capital from TSh 2M to 200M for stock, equipment, and expansion. Secured against a land title deed or registered vehicle — disbursed within 48 hours.">Working capital from TSh 2M to 200M for stock, equipment, and expansion. Secured against a land title deed or registered vehicle — disbursed within 48 hours.</p>
+        <a href="business-loan.html" class="sov-link">
+          <span data-sw="Soma zaidi" data-en="Learn more">Learn more</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+
+      <!-- Church & Institution -->
+      <div class="sov-card reveal d3">
+        <div class="sov-icon" aria-hidden="true">
+          <svg viewBox="0 0 80 80" fill="none" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+            <!-- Cross -->
+            <line x1="40" y1="8"  x2="40" y2="26" stroke="#0C2E4A" stroke-width="2.2"/>
+            <line x1="31" y1="15" x2="49" y2="15" stroke="#0C2E4A" stroke-width="2.2"/>
+            <!-- Church body -->
+            <path d="M14 70V46l26-22 26 22v24" stroke="#0C2E4A" stroke-width="2"/>
+            <line x1="14" y1="70" x2="66" y2="70" stroke="#0C2E4A" stroke-width="2"/>
+            <!-- Arched door -->
+            <path d="M34 70V58a6 6 0 0 1 12 0v12" stroke="#0C2E4A" stroke-width="1.5"/>
+            <!-- Windows -->
+            <circle cx="26" cy="56" r="5" stroke="#0C2E4A" stroke-width="1.5"/>
+            <circle cx="54" cy="56" r="5" stroke="#0C2E4A" stroke-width="1.5"/>
+            <!-- Cross accent dot -->
+            <circle cx="40" cy="15" r="3.5" fill="#f43334"/>
+          </svg>
+        </div>
+        <h3 class="sov-title" data-sw="Mikopo ya Kanisa &amp; Taasisi" data-en="Church &amp; Institution Loans">Church &amp; Institution Loans</h3>
+        <p class="sov-desc" data-sw="Mikopo ya ujenzi wa kanisa, magari ya huduma, na mahitaji ya wizara. Marejesho kwa makato ya sadaka za kawaida, kwa idhini ya rasmi ya bodi ya viongozi." data-en="Loans for church construction, ministry vehicles, and outreach facilities. Repaid from regular congregation offerings with formal leadership board approval.">Loans for church construction, ministry vehicles, and outreach facilities. Repaid from regular congregation offerings with formal leadership board approval.</p>
+        <a href="church-loan.html" class="sov-link">
+          <span data-sw="Soma zaidi" data-en="Learn more">Learn more</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ EMPLOYEE LOAN — SHOWCASE ════════════════ -->
+<section class="emp-section">
+  <div class="emp-inner">
+
+    <!-- Visual carousel — LEFT column -->
+    <div class="emp-visual reveal">
+      <div class="emp-carousel" id="empCarousel">
+        <div class="emp-slide active">
+          <img src="images/employee1.jpg" alt="Professional employee working on laptop" loading="lazy">
+        </div>
+        <div class="emp-slide">
+          <img src="images/employee2.jpg" alt="Industrial workers in safety gear" loading="lazy">
+        </div>
+        <div class="emp-slide">
+          <img src="images/employee3.jpg" alt="Happy BSI Finance customer" loading="lazy">
+        </div>
+      </div>
+      <div class="emp-controls">
+        <div class="emp-dots" id="empDots">
+          <button class="emp-dot active" data-idx="0" aria-label="Photo 1"></button>
+          <button class="emp-dot" data-idx="1" aria-label="Photo 2"></button>
+          <button class="emp-dot" data-idx="2" aria-label="Photo 3"></button>
+        </div>
+        <div class="emp-counter"><span id="empCurrent">1</span>&nbsp;/&nbsp;3</div>
+      </div>
+    </div>
+
+    <!-- Copy — RIGHT column -->
+    <div class="emp-copy reveal d1">
+      <h2 class="emp-title">Fast financing for <span class="wave-word" data-sw="watumishi" data-en="employees">employees</span></h2>
+      <p class="emp-tagline" data-sw="Mshahara wako ni dhamana yako — tunaufanya ufanye kazi haraka zaidi." data-en="Your salary is your security — we make it work faster for you.">Your salary is your security — we make it work faster for you.</p>
+      <p class="emp-desc" data-sw="Hadi mara 12 ya mshahara wako, marejesho kwa makato ya moja kwa moja ya mshahara. Inapatikana kwa watumishi wa serikali, walimu, NGO na makampuni binafsi yaliyosajiliwa." data-en="Up to 12× your monthly salary, repaid by direct payroll deduction. Available to civil servants, teachers, NGO staff and employees of registered private companies.">Up to 12× your monthly salary, repaid by direct payroll deduction. Available to civil servants, teachers, NGO staff and employees of registered private companies.</p>
+      <ul class="emp-perks">
+        <li class="emp-perk">
+          <span class="emp-perk-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>
+          <span data-sw="Makato ya moja kwa moja ya mshahara — bila kushughulikia pesa" data-en="Direct payroll deduction — no cash handling">Direct payroll deduction — no cash handling</span>
+        </li>
+        <li class="emp-perk">
+          <span class="emp-perk-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>
+          <span data-sw="Idhini ndani ya masaa 48 kwa maombi kamili" data-en="Approval within 48 hours on complete applications">Approval within 48 hours on complete applications</span>
+        </li>
+        <li class="emp-perk">
+          <span class="emp-perk-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>
+          <span data-sw="Watumishi wa serikali, NGO, walimu na sekta binafsi wanastahili" data-en="Civil servants, NGO staff, teachers and private sector eligible">Civil servants, NGO staff, teachers and private sector eligible</span>
+        </li>
+      </ul>
+      <div class="emp-metrics">
+        <div class="emp-metric">
+          <strong>16%</strong>
+          <span data-sw="kwa mwaka" data-en="per annum">per annum</span>
+        </div>
+        <div class="emp-metric">
+          <strong>TSh 80M</strong>
+          <span data-sw="kiwango cha juu" data-en="max loan">max loan</span>
+        </div>
+        <div class="emp-metric">
+          <strong>48 hrs</strong>
+          <span data-sw="idhini ya wastani" data-en="avg. approval">avg. approval</span>
+        </div>
+      </div>
+      <a href="employee-loan.html" class="emp-cta">
+        <span data-sw="Soma zaidi" data-en="Learn more">Learn more</span>
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════ BUSINESS LOAN — SHOWCASE ════════════════ -->
+<section class="biz-section">
+  <div class="biz-inner">
+
+    <!-- Copy — LEFT column -->
+    <div class="emp-copy reveal">
+      <h2 class="emp-title">Working capital to grow your <span class="wave-word" data-sw="biashara" data-en="business">business</span></h2>
+      <p class="emp-tagline" data-sw="Jaza rasilimali, panua, na kukua — mtaji unapoihitaji zaidi biashara yako." data-en="Stock up, expand, and grow — capital when your business needs it most.">Stock up, expand, and grow — capital when your business needs it most.</p>
+      <p class="emp-desc" data-sw="Mikopo ya mtaji wa kazi kuanzia TSh milioni 2 hadi 200, kwa bidhaa, vifaa, na upanuzi wa biashara. Dhamana ya hati ya ardhi au gari iliyosajiliwa inakubalika." data-en="Working-capital loans from TSh 2M to 200M for stock, equipment, and business expansion. Secured against a land title deed or registered vehicle.">Working-capital loans from TSh 2M to 200M for stock, equipment, and business expansion. Secured against a land title deed or registered vehicle.</p>
+      <ul class="emp-perks">
+        <li class="emp-perk">
+          <span class="emp-perk-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>
+          <span data-sw="Dhamana ya hati ya ardhi au gari lililousajiliwa" data-en="Secured against land title deed or registered vehicle">Secured against land title deed or registered vehicle</span>
+        </li>
+        <li class="emp-perk">
+          <span class="emp-perk-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>
+          <span data-sw="Inafaa kwa maduka, viwanda vidogo, na biashara za huduma" data-en="Suitable for retail, small-scale production and service businesses">Suitable for retail, small-scale production and service businesses</span>
+        </li>
+        <li class="emp-perk">
+          <span class="emp-perk-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>
+          <span data-sw="Muda wa kurudisha hadi miezi 36 wa kulingana" data-en="Flexible repayment terms up to 36 months">Flexible repayment terms up to 36 months</span>
+        </li>
+      </ul>
+      <div class="emp-metrics">
+        <div class="emp-metric">
+          <strong>18%</strong>
+          <span data-sw="kwa mwaka" data-en="per annum">per annum</span>
+        </div>
+        <div class="emp-metric">
+          <strong>TSh 200M</strong>
+          <span data-sw="kiwango cha juu" data-en="max loan">max loan</span>
+        </div>
+        <div class="emp-metric">
+          <strong>36 mo</strong>
+          <span data-sw="muda wa juu" data-en="max term">max term</span>
+        </div>
+      </div>
+      <a href="business-loan.html" class="emp-cta">
+        <span data-sw="Soma zaidi" data-en="Learn more">Learn more</span>
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+
+    <!-- Visual carousel — RIGHT column -->
+    <div class="biz-visual reveal d1">
+      <div class="biz-carousel" id="bizCarousel">
+        <div class="biz-slide active">
+          <img src="images/business1.jpg" alt="Market trader at fruit stall" loading="lazy">
+        </div>
+        <div class="biz-slide">
+          <img src="images/business2.jpg" alt="Tailor working at sewing machine" loading="lazy">
+        </div>
+        <div class="biz-slide">
+          <img src="images/business3.jpg" alt="Busy Tanzanian market street" loading="lazy">
+        </div>
+      </div>
+      <div class="biz-controls">
+        <div class="biz-dots" id="bizDots">
+          <button class="biz-dot active" data-idx="0" aria-label="Photo 1"></button>
+          <button class="biz-dot" data-idx="1" aria-label="Photo 2"></button>
+          <button class="biz-dot" data-idx="2" aria-label="Photo 3"></button>
+        </div>
+        <div class="biz-counter"><span id="bizCurrent">1</span>&nbsp;/&nbsp;3</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════ CHURCH LOAN — SHOWCASE ════════════════ -->
+<section class="church-section">
+  <div class="church-inner">
+
+    <!-- Visual carousel — LEFT column -->
+    <div class="church-visual reveal">
+      <div class="church-carousel" id="churchCarousel">
+        <div class="church-slide active">
+          <img src="images/church1.jpg" alt="Church building under construction" loading="lazy">
+        </div>
+        <div class="church-slide">
+          <img src="images/church2.jpg" alt="Ministry outreach stage" loading="lazy">
+        </div>
+        <div class="church-slide">
+          <img src="images/church3.jpg" alt="Ministry vehicle" loading="lazy">
+        </div>
+      </div>
+      <div class="church-controls">
+        <div class="church-dots" id="churchDots">
+          <button class="church-dot active" data-idx="0" aria-label="Photo 1"></button>
+          <button class="church-dot" data-idx="1" aria-label="Photo 2"></button>
+          <button class="church-dot" data-idx="2" aria-label="Photo 3"></button>
+        </div>
+        <div class="church-counter"><span id="churchCurrent">1</span>&nbsp;/&nbsp;3</div>
+      </div>
+    </div>
+
+    <!-- Copy — RIGHT column -->
+    <div class="emp-copy reveal d1">
+      <h2 class="emp-title">Construction and <span class="wave-word" data-sw="huduma za kanisa" data-en="ministry">ministry</span> financing</h2>
+      <p class="emp-tagline" data-sw="Kanisa lako linastahili kukamilika — tunasaidia kuifanya ndoto kuwa ukweli." data-en="Your congregation's vision deserves to be built — we help make it reality.">Your congregation's vision deserves to be built — we help make it reality.</p>
+      <p class="emp-desc" data-sw="Mikopo ya ujenzi wa kanisa, ununuzi wa gari la huduma, na mahitaji ya wizara. Marejesho kwa makato ya sadaka za kawaida, kwa idhini ya rasmi ya bodi ya viongozi." data-en="Loans for church construction, ministry vehicles, and outreach facilities. Repaid from regular congregation offerings, with formal leadership board approval.">Loans for church construction, ministry vehicles, and outreach facilities. Repaid from regular congregation offerings, with formal leadership board approval.</p>
+      <ul class="emp-perks">
+        <li class="emp-perk">
+          <span class="emp-perk-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>
+          <span data-sw="Inafaa kwa ujenzi wa kanisa, ukumbi, na ofisi za wizara" data-en="Covers church building, halls and ministry office construction">Covers church building, halls and ministry office construction</span>
+        </li>
+        <li class="emp-perk">
+          <span class="emp-perk-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>
+          <span data-sw="Magari ya huduma na vifaa vya sanamu vinafunikwa" data-en="Ministry vehicles and outreach equipment included">Ministry vehicles and outreach equipment included</span>
+        </li>
+        <li class="emp-perk">
+          <span class="emp-perk-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span>
+          <span data-sw="Marejesho kwa sadaka — inahitaji idhini ya rasmi ya bodi" data-en="Repaid from offerings — requires formal board approval">Repaid from offerings — requires formal board approval</span>
+        </li>
+      </ul>
+      <div class="emp-metrics">
+        <div class="emp-metric">
+          <strong>14%</strong>
+          <span data-sw="kwa mwaka" data-en="per annum">per annum</span>
+        </div>
+        <div class="emp-metric">
+          <strong>TSh 300M</strong>
+          <span data-sw="kiwango cha juu" data-en="max loan">max loan</span>
+        </div>
+        <div class="emp-metric">
+          <strong>48 mo</strong>
+          <span data-sw="muda wa juu" data-en="max term">max term</span>
+        </div>
+      </div>
+      <a href="church-loan.html" class="emp-cta">
+        <span data-sw="Soma zaidi" data-en="Learn more">Learn more</span>
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════ LOAN BENEFITS BAND ════════════════ -->
+<section class="section" style="background:var(--navy-900);position:relative;overflow:hidden;">
+  <div class="dot-grid-dark" style="position:absolute;inset:0;opacity:.5;pointer-events:none;"></div>
+  <div class="wrap" style="position:relative;">
+    <div class="loan-benefits-grid">
+
+      <div class="reveal">
+        <span class="eyebrow" style="color:var(--coral-400);" data-sw="Kwa nini mkopo wa BSI" data-en="Why a BSI Finance loan">Why a BSI Finance loan</span>
+        <h2 class="display" style="margin:14px 0 22px;color:#fff;font-size:clamp(34px,4vw,52px);" data-sw="Faida za kukopa na BSI Finance." data-en="The advantages of borrowing with us.">The advantages of borrowing with us.</h2>
+        <p style="font-size:17px;color:rgba(255,255,255,.7);line-height:1.8;margin-bottom:40px;" data-sw="Tofauti na benki nyingi, BSI Finance inakupa mkopo wa haraka, uwazi kamili, na msaada wa karibu — bila ada za siri." data-en="Unlike many lenders, BSI Finance gives you fast decisions, complete rate transparency, and personal service — with no hidden fees.">Unlike many lenders, BSI Finance gives you fast decisions, complete rate transparency, and personal service — with no hidden fees.</p>
+        <a href="contact.html" class="btn btn-white" style="padding:16px 26px;font-size:15px;text-decoration:none;">
+          <span data-sw="Omba mkopo sasa" data-en="Apply for a loan">Apply for a loan</span>
+          <svg width="16" height="16" style="color:var(--navy-900);"><use href="#ic-arrow-right"/></svg>
+        </a>
+      </div>
+
+      <div class="loan-benefits-items reveal d1">
+        <div class="loan-benefit-item">
+          <div class="loan-benefit-icon"><svg width="20" height="20"><use href="#ic-bolt"/></svg></div>
+          <div>
+            <div class="loan-benefit-title" data-sw="Idhini ndani ya masaa 48" data-en="Approval within 48 hours">Approval within 48 hours</div>
+            <div class="loan-benefit-desc" data-sw="Timu yetu ya mikopo inaamua haraka ili usipoteze fursa yako." data-en="Our credit team makes fast decisions so you never miss an opportunity.">Our credit team makes fast decisions so you never miss an opportunity.</div>
+          </div>
+        </div>
+        <div class="loan-benefit-item">
+          <div class="loan-benefit-icon"><svg width="20" height="20"><use href="#ic-shield"/></svg></div>
+          <div>
+            <div class="loan-benefit-title" data-sw="Uwazi wa kiwango cha riba" data-en="Transparent interest rates">Transparent interest rates</div>
+            <div class="loan-benefit-desc" data-sw="Kiwango unachokiona ndicho unacholipa — hakuna ada za ziada au faini za siri." data-en="The rate you see is the rate you pay — no surprise charges or hidden penalties.">The rate you see is the rate you pay — no surprise charges or hidden penalties.</div>
+          </div>
+        </div>
+        <div class="loan-benefit-item">
+          <div class="loan-benefit-icon"><svg width="20" height="20"><use href="#ic-phone"/></svg></div>
+          <div>
+            <div class="loan-benefit-title" data-sw="Msaada wa karibu wa ndani" data-en="Local personal support">Local personal support</div>
+            <div class="loan-benefit-desc" data-sw="Timu yetu ya Tegeta inajibu kwa Kiswahili na Kiingereza, siku 6 kwa wiki." data-en="Our Tegeta team responds in Swahili and English, six days a week — real people, not bots.">Our Tegeta team responds in Swahili and English, six days a week — real people, not bots.</div>
+          </div>
+        </div>
+        <div class="loan-benefit-item">
+          <div class="loan-benefit-icon"><svg width="20" height="20"><use href="#ic-check"/></svg></div>
+          <div>
+            <div class="loan-benefit-title" data-sw="Imethibitishwa na Benki Kuu" data-en="Licensed by Bank of Tanzania">Licensed by Bank of Tanzania</div>
+            <div class="loan-benefit-desc" data-sw="BSI Finance inafanya kazi chini ya kanuni za Benki Kuu ya Tanzania, ikikulinda wewe." data-en="BSI Finance operates under Bank of Tanzania regulations, protecting your rights as a borrower.">BSI Finance operates under Bank of Tanzania regulations, protecting your rights as a borrower.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ HOW IT WORKS ════════════════ -->
+<section class="how-section section" style="background:var(--sand-100);">
+  <div class="wrap">
+    <div style="text-align:center;" class="reveal">
+      <span class="eyebrow" data-sw="Mchakato" data-en="The process">The process</span>
+      <h2 class="display" style="margin:16px auto 0;color:var(--navy-900);font-size:clamp(36px,4.5vw,58px);" data-sw="Hatua nne. Hivyo tu." data-en="Four steps. That's it.">Four steps. That's it.</h2>
+    </div>
+
+    <div class="how-grid">
+
+      <div class="how-step reveal d1">
+        <div class="how-number">
+          <span>01</span>
+        </div>
+        <!-- Decorative arrow to next step -->
+        <div class="how-arrow" aria-hidden="true">
+          <svg width="32" height="20" viewBox="0 0 32 20" fill="none">
+            <path d="M0 10 Q12 4, 26 10" stroke="var(--line-strong)" stroke-width="1.5" stroke-dasharray="4 3" stroke-linecap="round"/>
+            <path d="M22 6 L26 10 L22 14" stroke="var(--line-strong)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="how-step-title" data-sw="Omba" data-en="Apply">Apply</div>
+        <div class="how-step-desc" data-sw="Jaza fomu fupi mtandaoni au tembelea tawi letu Tegeta." data-en="Fill a short form online or visit our Tegeta branch in person.">Fill a short form online or visit our Tegeta branch in person.</div>
+      </div>
+
+      <div class="how-step reveal d2">
+        <div class="how-number"><span>02</span></div>
+        <div class="how-arrow" aria-hidden="true">
+          <svg width="32" height="20" viewBox="0 0 32 20" fill="none">
+            <path d="M0 10 Q12 4, 26 10" stroke="var(--line-strong)" stroke-width="1.5" stroke-dasharray="4 3" stroke-linecap="round"/>
+            <path d="M22 6 L26 10 L22 14" stroke="var(--line-strong)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="how-step-title" data-sw="Pakia nyaraka" data-en="Upload docs">Upload docs</div>
+        <div class="how-step-desc" data-sw="Kitambulisho, mshahara au leseni ya biashara, dhamana." data-en="ID, payslip or business licence, collateral documents.">ID, payslip or business licence, collateral documents.</div>
+      </div>
+
+      <div class="how-step reveal d3">
+        <div class="how-number"><span>03</span></div>
+        <div class="how-arrow" aria-hidden="true">
+          <svg width="32" height="20" viewBox="0 0 32 20" fill="none">
+            <path d="M0 10 Q12 4, 26 10" stroke="var(--line-strong)" stroke-width="1.5" stroke-dasharray="4 3" stroke-linecap="round"/>
+            <path d="M22 6 L26 10 L22 14" stroke="var(--line-strong)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="how-step-title" data-sw="Pata uamuzi" data-en="Get a decision">Get a decision</div>
+        <div class="how-step-desc" data-sw="Timu yetu ya mikopo huamua ndani ya masaa 48." data-en="Our credit team responds within 48 hours of submission.">Our credit team responds within 48 hours of submission.</div>
+      </div>
+
+      <div class="how-step reveal d4">
+        <div class="how-number"><span>04</span></div>
+        <div class="how-step-title" data-sw="Pokea fedha" data-en="Receive funds">Receive funds</div>
+        <div class="how-step-desc" data-sw="Fedha hutumwa moja kwa moja kwenye akaunti yako au M-Pesa." data-en="Funds disbursed directly to your bank account or M-Pesa wallet.">Funds disbursed directly to your bank account or M-Pesa wallet.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ COMMUNITY BANNER ════════════════ -->
+<section class="fullband reveal">
+  <img class="fullband-img" src="images/community-banner.jpg" alt="Tanzanian farmer in green fields">
+  <div class="fullband-overlay"></div>
+  <div class="fullband-content">
+    <p class="fullband-eyebrow" data-sw="ATHARI ZA JAMII · BSI FINANCE" data-en="COMMUNITY IMPACT · BSI FINANCE">COMMUNITY IMPACT · BSI FINANCE</p>
+    <h2 class="fullband-headline" data-sw="Kwa wafanyakazi, wakulima, na jamii za Tanzania — mtaji unaobadilisha maisha." data-en="For Tanzania's workers, farmers, and communities — capital that makes a difference.">For Tanzania's workers, farmers, and communities — capital that makes a difference.</h2>
+    <a href="about.html" class="fullband-btn">
+      Our story
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- ════════════════ WHY CHOOSE US ════════════════ -->
+<section class="section" style="background:#fff;border-top:1px solid var(--line);">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:56px;" class="reveal">
+      <span class="eyebrow" data-sw="Kwa nini BSI" data-en="Why BSI Finance">Why BSI Finance</span>
+      <h2 class="display" style="margin:16px auto 0;color:var(--navy-900);font-size:clamp(36px,4.5vw,58px);max-width:720px;" data-sw="Imejengwa kwa uaminifu kwa Watanzania." data-en="Built with integrity for Tanzanians.">Built with integrity for Tanzanians.</h2>
+    </div>
+
+    <div class="why-grid">
+
+      <div class="card reveal d1" style="padding:32px;">
+        <div class="card-why-icon">
+          <svg width="24" height="24"><use href="#ic-shield"/></svg>
+        </div>
+        <h4 class="display" style="font-size:23px;margin-bottom:10px;" data-sw="Imethibitishwa rasmi" data-en="Fully licensed">Fully licensed</h4>
+        <p style="font-size:15px;" data-sw="Chini ya usimamizi wa Benki Kuu ya Tanzania. Mkopo salama, uwazi kamili." data-en="Regulated by the Bank of Tanzania. Safe lending, complete transparency.">Regulated by the Bank of Tanzania. Safe lending, complete transparency.</p>
+      </div>
+
+      <div class="card reveal d2" style="padding:32px;">
+        <div class="card-why-icon">
+          <svg width="24" height="24"><use href="#ic-bolt"/></svg>
+        </div>
+        <h4 class="display" style="font-size:23px;margin-bottom:10px;" data-sw="Haraka za masaa 48" data-en="48-hour speed">48-hour speed</h4>
+        <p style="font-size:15px;" data-sw="Idhini ya mkopo ndani ya siku mbili. Hakuna mikataba mirefu, hakuna ucheleweshaji." data-en="Loan decisions within two business days. No lengthy paperwork, no unnecessary delays.">Loan decisions within two business days. No lengthy paperwork, no unnecessary delays.</p>
+      </div>
+
+      <div class="card reveal d3" style="padding:32px;">
+        <div class="card-why-icon">
+          <svg width="24" height="24"><use href="#ic-phone"/></svg>
+        </div>
+        <h4 class="display" style="font-size:23px;margin-bottom:10px;" data-sw="Huduma ya karibu" data-en="Personal service">Personal service</h4>
+        <p style="font-size:15px;" data-sw="Timu yetu ipo Tegeta, Dar es Salaam. Tunajibu kwa Kiswahili na Kiingereza, siku 6 kwa wiki." data-en="Our team is based at Tegeta, Dar es Salaam. We respond in Swahili and English, six days a week.">Our team is based at Tegeta, Dar es Salaam. We respond in Swahili and English, six days a week.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════ CTA BAND ════════════════ -->
+<section class="section">
+  <div class="wrap">
+    <div class="cta-band reveal">
+      <div class="cta-band-deco"></div>
+      <div class="cta-band-inner">
+        <div>
+          <div class="cta-band-eyebrow" data-sw="Tayari kuanza?" data-en="Ready to begin?">Ready to begin?</div>
+          <h2 data-sw="Mtaji wako unangoja. Tuombe leo." data-en="Your capital is waiting. Apply today.">Your capital is waiting. Apply today.</h2>
+        </div>
+        <div class="cta-band-actions">
+          <a href="contact.html" class="btn btn-white" style="padding:18px 28px;font-size:15px;text-decoration:none;">
+            <span data-sw="Omba sasa" data-en="Apply now">Apply now</span>
+            <svg width="16" height="16" style="color:var(--navy-900);"><use href="#ic-arrow-right"/></svg>
+          </a>
+          <a href="tel:+255753469241" class="btn" style="color:rgba(255,255,255,.9);padding:12px 0;font-size:14px;text-decoration:none;">
+            <svg width="14" height="14"><use href="#ic-phone"/></svg>
+            +255 753 469 241
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ FOOTER ════════════════ -->
+<footer class="site-footer">
+  <div class="dot-grid-dark" style="position:absolute;inset:0;opacity:.4;pointer-events:none;"></div>
+  <div class="wrap" style="position:relative;">
+    <!-- Trust strip -->
+    <div class="footer-trust">
+      <div class="footer-trust-label">Trusted &amp; regulated by</div>
+      <div class="footer-trust-wrap">
+        <div class="footer-trust-track">
+          <span class="footer-trust-item">Bank of Tanzania &mdash; Tier 2</span>
+          <span class="footer-trust-dot">&bull;</span>
+          <span class="footer-trust-item">TIN 145-829-001</span>
+          <span class="footer-trust-dot">&bull;</span>
+          <span class="footer-trust-item">BRELA 102888</span>
+          <span class="footer-trust-dot">&bull;</span>
+          <span class="footer-trust-item">CRDB Bank</span>
+          <span class="footer-trust-dot">&bull;</span>
+          <span class="footer-trust-item">NMB Bank</span>
+          <span class="footer-trust-dot">&bull;</span>
+          <span class="footer-trust-item">Vodacom M-Pesa</span>
+          <span class="footer-trust-dot">&bull;</span>
+          <span class="footer-trust-item">Tigo Pesa</span>
+          <span class="footer-trust-dot">&bull;</span>
+          <span class="footer-trust-item">Airtel Money</span>
+          <span class="footer-trust-dot">&bull;</span>
+          <span class="footer-trust-item">Halotel</span>
+          <span class="footer-trust-dot">&bull;</span>
+          <span class="footer-trust-item">TRA Tanzania</span>
+          <span class="footer-trust-dot">&bull;</span>
+          <!-- loop duplicate -->
+          <span class="footer-trust-item">Bank of Tanzania &mdash; Tier 2</span>
+          <span class="footer-trust-dot">&bull;</span>
+          <span class="footer-trust-item">TIN 145-829-001</span>
+          <span class="footer-trust-dot">&bull;</span>
+          <span class="footer-trust-item">BRELA 102888</span>
+          <span class="footer-trust-dot">&bull;</span>
+          <span class="footer-trust-item">CRDB Bank</span>
+          <span class="footer-trust-dot">&bull;</span>
+          <span class="footer-trust-item">NMB Bank</span>
+          <span class="footer-trust-dot">&bull;</span>
+          <span class="footer-trust-item">Vodacom M-Pesa</span>
+          <span class="footer-trust-dot">&bull;</span>
+          <span class="footer-trust-item">Tigo Pesa</span>
+          <span class="footer-trust-dot">&bull;</span>
+          <span class="footer-trust-item">Airtel Money</span>
+          <span class="footer-trust-dot">&bull;</span>
+          <span class="footer-trust-item">Halotel</span>
+          <span class="footer-trust-dot">&bull;</span>
+          <span class="footer-trust-item">TRA Tanzania</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-top">
+
+      <!-- Brand -->
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="display:inline-flex;"><img src="images/bsi-logo.png" alt="BSI Finance" class="nav-logo-img" style="height:48px;filter:brightness(0) invert(1);"></a>
+        <p data-sw="Tunatoa mtaji wenye busara kwa Watanzania wenye ndoto. Toka 2018, kutoka tawi letu la Tegeta." data-en="We extend wise capital to Tanzanians with ambition. Since 2018, from our Tegeta branch in Dar es Salaam.">We extend wise capital to Tanzanians with ambition. Since 2018, from our Tegeta branch in Dar es Salaam.</p>
+        <div class="footer-tz">
+          <svg viewBox="0 0 60 40" width="36" height="24" aria-label="Tanzania flag" style="border-radius:3px;overflow:hidden;flex-shrink:0;">
+            <polygon points="0,0 51,0 0,34" fill="#1EB53A"/>
+            <polygon points="0,34 51,0 54,0 0,36" fill="#FCD116"/>
+            <polygon points="0,36 54,0 60,4 6,40" fill="#000"/>
+            <polygon points="6,40 60,4 60,6 9,40" fill="#FCD116"/>
+            <polygon points="9,40 60,6 60,40" fill="#00A3DD"/>
+          </svg>
+          <div class="footer-tz-text">
+            <strong>United Republic of Tanzania</strong>
+            Dar es Salaam · Est. 2018
+          </div>
+        </div>
+      </div>
+
+      <!-- Loans -->
+      <div>
+        <div class="footer-col-title" data-sw="Mikopo" data-en="Loans">Loans</div>
+        <div class="footer-links">
+          <a href="employee-loan.html" data-sw="Wafanyakazi" data-en="Salaried employees">Salaried employees</a>
+          <a href="business-loan.html" data-sw="Wafanyabiashara" data-en="SMEs and traders">SMEs and traders</a>
+          <a href="church-loan.html" data-sw="Kanisa" data-en="Churches">Churches</a>
+          <a href="requirements.html" data-sw="Masharti ya mkopo" data-en="Requirements">Requirements</a>
+        </div>
+      </div>
+
+      <!-- Company -->
+      <div>
+        <div class="footer-col-title" data-sw="Kampuni" data-en="Company">Company</div>
+        <div class="footer-links">
+          <a href="about.html" data-sw="Kuhusu BSI" data-en="About BSI Finance">About BSI Finance</a>
+          <a href="about.html#mission" data-sw="Dhamira yetu" data-en="Our mission">Our mission</a>
+          <a href="about.html#team" data-sw="Timu yetu" data-en="Our team">Our team</a>
+          <a href="contact.html" data-sw="Wasiliana nasi" data-en="Contact us">Contact us</a>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <div class="footer-col-title" data-sw="Wasiliana" data-en="Get in touch">Get in touch</div>
+        <div class="footer-contact-item">
+          <svg class="footer-ci-icon" width="16" height="16"><use href="#ic-pin"/></svg>
+          <div class="footer-ci-text">GDB Social Centre, Tegeta<br>Dar es Salaam, Tanzania</div>
+        </div>
+        <div class="footer-contact-item">
+          <svg class="footer-ci-icon" width="16" height="16"><use href="#ic-phone"/></svg>
+          <div class="footer-ci-text">
+            <a href="tel:+255753469241">+255 753 469 241</a><br>
+            <a href="tel:+255745008219">+255 745 008 219</a>
+          </div>
+        </div>
+        <div class="footer-contact-item">
+          <svg class="footer-ci-icon" width="16" height="16"><use href="#ic-mail"/></svg>
+          <div class="footer-ci-text">
+            <a href="mailto:info@bsifinance.co.tz">info@bsifinance.co.tz</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <hr class="footer-divider">
+    <div class="footer-bottom">
+      <div data-sw="© 2026 BSI Finance Tanzania Ltd. Haki zote zimehifadhiwa." data-en="© 2026 BSI Finance Tanzania Ltd. All rights reserved.">© 2026 BSI Finance Tanzania Ltd. All rights reserved.</div>
+      <div class="footer-built">Built by Nuruni Tech.</div>
+      
+      <div>Licensed by the Bank of Tanzania · TIN 145-829-001 · BRELA 102888</div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
